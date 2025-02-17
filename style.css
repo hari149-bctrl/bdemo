@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sauce+One&display=swap');
+
+body {
+    background-color: #203141;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+    font-family: 'Open Sauce One', sans-serif;
+}
+
+.entry-animation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.entry-logo {
+    width: 150px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.entry-names-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Text animations */
+.entry-logo-name {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.entryQuote {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -40px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+/* Bouncing effect for the star */
+.entryStar {
+    display: inline-block;
+    animation: bounce 1s infinite alternate ease-in-out;
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for bouncing star */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 599px) {
+    .entry-logo {
+        width: 100px;
+    }
+    .entry-animation-container {
+        column-gap: 3px;
+    }
+    .entry-logo-name {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .entryQuote {
+        font-size: 10px;
+        margin-top: -18px;
+    }
+}
