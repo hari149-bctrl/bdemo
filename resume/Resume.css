@@ -11,7 +11,9 @@
     --background-color: #203141;
     --background-color-deap: #142231;
 }
-
+hr{
+    border-color: var(--text-color);
+}
 
 /* Body Styling */
 body {
@@ -220,5 +222,29 @@ label{
     }
     .nav-item{
         min-width: fit-content;
+    }
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-top: 20px;
+} 
+
+
+/* for small screens */
+@media (max-width: 700px) {
+    footer{
+        font-size: 15px;
+        margin-top: 20px;
     }
 }

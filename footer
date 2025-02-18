@@ -1,0 +1,27 @@
+<footer>
+    <p class="made">❤️ Made with love and passion ❤️</p>
+    <p class="by">By Brainy</p>
+    <p class="copy">2025 &copy; All rights reserved</p>
+</footer>
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 0px;
+    font-weight: 700;
+    margin-top: 20px;
+}  // This is for regular
+
+
+
+
+<!-- For the 700px -->
+footer{
+    font-size: 15px;
+    margin-top: 20px;
+}
