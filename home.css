@@ -6,13 +6,19 @@
 
 :root{
     --background-color: #203141;
+    --text-color: #ffbc0c;
     --background-color-deap: #142231;
 }
+
+
+
+
+
 
 body {
     background-color: var(--background-color);
     margin: 0;
-    padding-bottom: 60px; /* Ensure content doesn’t hide behind the navbar */
+    padding-bottom: 60px;
     
 }
 
@@ -90,3 +96,181 @@ body {
         min-width: fit-content;
     }
 }
+
+
+
+
+/* Home main container */
+.homePageMainContainer{
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.homeName{
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.subHomeName{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    margin-top: -40px;
+}
+
+
+
+/* about main */
+.aboutMain{
+    width: 100%;
+    text-align: center;
+    background-color: var(--background-color-deap);
+    /* padding-top: 20px; */
+}
+.aboutName{
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    /* border-width: 20px; */
+    margin-top: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aboutContent{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+
+
+
+
+/* Contact items */
+.contact-Container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    /* margin-left: 30px; */
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffbc0c;
+    text-decoration: none;
+    font-weight: 700;
+    column-gap: 5px;
+}
+.contactImages{
+    width: 40px;
+}
+.contactNames{
+    display: none;
+}
+.followUstxt{
+    text-align: start;
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+
+/* Footer sesction */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 0px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .homeName{
+        font-size: 20px;
+    }
+    .subHomeName{
+        margin-top: -10px;
+        font-size: 10px;
+    }
+    .contact-Container{
+        column-gap: 10px;
+        align-items: flex-start;
+    }
+    .contactImages{
+        width: 30px;
+        
+    }
+    .contactNames{
+        display: none;
+    }
+
+
+    /* about container */
+    .aboutMain{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .aboutUs{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutImage{
+        width: 30%;
+    }
+    .aboutContentContainer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutContent{
+        font-size: 10px;
+        line-height: 15px;
+        width: 80%;
+    }
+    .followUstxt{
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
