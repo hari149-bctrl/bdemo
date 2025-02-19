@@ -17,11 +17,15 @@ body {
     
 }
 svg {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
-    display: block;
-    overflow: scroll;
-    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: 'Open Sauce One', sans-serif;
+    
+    /* overflow: scroll; */
+    /* padding: 0px 20px 0px 20px; */
 }
 .bottom-nav {
     position: fixed;
@@ -97,6 +101,9 @@ footer{
     font-weight: 700;
     margin-top: -10px;
 }
+.svgcontainer{
+    display: none;
+}
 
 @media (max-width:700px) {
     .bottom-logos{
@@ -114,6 +121,17 @@ footer{
 
     }
     hr{
+        display: none;
+    }
+    .svgcontainer{
+        display: block;
+        width: 100%;
+        /* border: 1px solid pink; */
+        /* background-color: #bbb; */
+        padding-left: 13px;
+        padding-bottom: 30px;
+    }
+    .svgSystem{
         display: none;
     }
 }
