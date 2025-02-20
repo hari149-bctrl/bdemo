@@ -136,4 +136,8 @@ footer{
     .svgSystem{
         display: none;
     }
+    svg text{
+        font-family: 'Open Sauce One', sans-serif !important;
+        fill: black;
+    }
 }
