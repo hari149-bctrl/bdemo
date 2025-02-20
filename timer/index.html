@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon Countdown</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        /* General Styling */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 300% 300%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Animated Background */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Container */
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Countdown Timer */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            width: 80px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Adjustments for Smaller Screens */
+        @media (max-width: 700px) {
+            .time-box {
+                width: 60px;
+                /* padding: 8px; */
+            }
+            .countdown {
+                gap: 5px;
+            }
+            h1 {
+                font-size: 1rem;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+
+        /* Flip Animation */
+        @keyframes flip {
+            0% { transform: rotateX(0); }
+            50% { transform: rotateX(-90deg); }
+            100% { transform: rotateX(0); }
+        }
+
+        /* Timer Labels */
+        .label {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            color: #ffcc70;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Coming Soon 🚀</h1>
+        <div class="countdown">
+            <div class="time-box">
+                <span id="days">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <a href="../home/" style="margin-top:20px; text-decoration: none; font-weight: 600; font-size: 14px; text-align: center; width: 100%; color: white;">Go back to Home Page</a>
+    <script>
+        function startCountdown() {
+            const now = new Date();
+            const targetDate = new Date();
+            targetDate.setDate(now.getDate() + 22);
+            targetDate.setHours(0, 0, 0, 0);
+
+            let lastValues = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const timeDiff = targetDate.getTime() - now;
+
+                if (timeDiff <= 0) {
+                    document.querySelector(".countdown").innerHTML = "🎉 Time's up! 🎉";
+                    return;
+                }
+
+                const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+                if (seconds !== lastValues.seconds) updateElement("seconds", seconds);
+                if (minutes !== lastValues.minutes) updateElement("minutes", minutes);
+                if (hours !== lastValues.hours) updateElement("hours", hours);
+                if (days !== lastValues.days) updateElement("days", days);
+
+                lastValues = { days, hours, minutes, seconds };
+            }
+
+            function updateElement(id, value) {
+                const element = document.getElementById(id);
+                element.style.animation = "flip 0.5s";
+                setTimeout(() => {
+                    element.innerText = value.toString().padStart(2, "0");
+                    element.style.animation = "";
+                }, 250);
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        startCountdown();
+    </script>
+
+</body>
+</html>

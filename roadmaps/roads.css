@@ -128,8 +128,9 @@ footer{
         width: 100%;
         /* border: 1px solid pink; */
         /* background-color: #bbb; */
-        padding-left: 13px;
+        /* padding-left: 13px; */
         padding-bottom: 30px;
+        font-family: 'Open Sauce One', sans-serif;
     }
     .svgSystem{
         display: none;
