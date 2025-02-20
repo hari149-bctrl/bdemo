@@ -125,7 +125,8 @@ footer{
     }
     .svgcontainer{
         display: block;
-        width: 100%;
+        /* width: 100%; */
+
         /* border: 1px solid pink; */
         /* background-color: #bbb; */
         /* padding-left: 13px; */
