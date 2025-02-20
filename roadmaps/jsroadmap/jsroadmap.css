@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sauce+One&display=swap');
 
 *{
-    font-family: 'Open Sauce One', sans-serif;
+    font-family: 'Open Sauce One', sans-serif !important;
 }
 
 :root{
@@ -86,7 +86,9 @@ svg{
     /* color: red; */
     font-weight: 600;
 }
-
+.svgContainer svg text{
+    font-family: 'Open Sauce One', sans-serif !important;
+}
 @media (max-width:700px) {
     .bottom-logos{
         width: 20px;

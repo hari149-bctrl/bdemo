@@ -22,7 +22,7 @@ svg {
     display: flex;
     align-items: center;
     justify-content: end;
-    font-family: 'Open Sauce One', sans-serif;
+    font-family: 'Open Sauce One', sans-serif !important;
     
     /* overflow: scroll; */
     /* padding: 0px 20px 0px 20px; */
