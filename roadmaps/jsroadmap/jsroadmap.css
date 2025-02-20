@@ -10,11 +10,19 @@
     --background-color-deap: #142231;
 }
 
+
+
+
+
+
 body {
     background-color: var(--background-color);
     margin: 0;
     padding-bottom: 60px;
     
+}
+svg{
+    background-color: var(--background-color);
 }
 
 .bottom-nav {
@@ -78,22 +86,6 @@ body {
     /* color: red; */
     font-weight: 600;
 }
-.roadmaplinkscontainer{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding: 20px;
-}
-a{
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    text-align: center;
-    background-color: var(--background-color-deap);
-    line-height: 20px;
-    padding: 20px 0px;
-    border-radius: 10px;
-}
 
 @media (max-width:700px) {
     .bottom-logos{
@@ -106,4 +98,9 @@ a{
     .nav-item{
         min-width: fit-content;
     }
+    .svgContainer{
+        padding-bottom: 25px;
+    }
 }
+
+
