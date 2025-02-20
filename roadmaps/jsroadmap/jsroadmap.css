@@ -24,7 +24,15 @@ body {
 svg{
     background-color: var(--background-color);
 }
-
+.svgContainer{
+    width: 50%;
+}
+.centerIt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -102,6 +110,7 @@ svg{
     }
     .svgContainer{
         padding-bottom: 25px;
+        width: 100%;
     }
 }
 
