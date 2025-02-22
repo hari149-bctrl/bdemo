@@ -19,9 +19,11 @@ function sendMail(event) {
         .then(function(response) {
             statusMessage.innerText = "Message sent successfully! ✅";
             console.log("Success:", response);
+            document.getElementById("contact-form").reset();
         })
         .catch(function(error) {
             statusMessage.innerText = "Message failed to send ❌";
             console.log("Error:", error);
+            document.getElementById("contact-form").reset();
         });
 }
