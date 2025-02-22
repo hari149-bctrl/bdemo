@@ -10,6 +10,7 @@ fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vRaPiN1rMzLPcz25HssuMuyrQ
         resultData = result.data;
         console.log(resultData)
         updateJobListings(resultData);
+
       }
     });
   })
@@ -17,7 +18,7 @@ fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vRaPiN1rMzLPcz25HssuMuyrQ
 
 function updateJobListings(data) {
   const container = document.querySelector(".hiringContainer");
-  
+  document.querySelector(".loading").classList.add("hidden");
 
   container.innerHTML = ""; // Clear existing HTML
 

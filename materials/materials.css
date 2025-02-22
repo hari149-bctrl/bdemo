@@ -125,8 +125,11 @@ footer {
 .notice{
     background-color: var(--background-color-deap);
     padding: 10px 20px;
-    color: var(--text-color);
+    color: #ffffff;
     border-radius: 10px;
+}
+strong{
+    color: #ffbc0c;
 }
 #countdown{
     color: #ffffff;
