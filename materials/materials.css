@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sauce+One&display=swap');
 
 *{
-    font-family: 'Open Sauce One', sans-serif !important;
+    font-family: 'Open Sauce One', sans-serif;
 }
 
 :root{
@@ -16,18 +16,9 @@ body {
     padding-bottom: 60px;
     
 }
-svg{
-    background-color: var(--background-color);
-}
-.svgContainer{
-    width: 50%;
-}
-.centerIt{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 60px;
-}
+
+
+
 
 
 .bottom-nav {
@@ -102,7 +93,75 @@ svg{
     .nav-item{
         min-width: fit-content;
     }
-    .svgContainer{
-        width: 100%;
+}
+
+
+
+
+
+
+
+
+
+#warningMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+.notice{
+    background-color: var(--background-color-deap);
+    padding: 10px 20px;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+#countdown{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+}
+.hidden{
+    display: none;
+}
+
+.fileLinksContainer{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    padding-bottom: 60px;
+}
+.link-container{
+    background-color: var(--background-color-deap);
+    text-align: center;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.link-container:hover{
+    background-color: #142231;
+}
+
+@media (max-width: 1024px) {
+    .fileLinksContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fileLinksContainer {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 30px;
+    }
+    .subMain{
+        padding: 10px;
     }
 }

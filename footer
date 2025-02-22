@@ -1,27 +1,49 @@
-<footer>
-    <p class="made">❤️ Made with love and passion ❤️</p>
-    <p class="by">By Brainy</p>
-    <p class="copy">2025 &copy; All rights reserved</p>
-</footer>
-
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 0px;
-    font-weight: 700;
-    margin-top: 20px;
-}  // This is for regular
-
-
-
-
-<!-- For the 700px -->
-footer{
-    font-size: 15px;
-    margin-top: 20px;
-}
+machine learning
+Cloud Computing
+Linux
+mongo
+node js
+kotlin
+Tool Tips
+javascript
+OS
+Testing Materials
+Postgresql
+ai
+Sql
+data wrangling
+Angular
+frontend
+dot net
+react js
+R programming
+Git and Github
+django
+power bi
+responsive web design
+Interview questions all subjects
+devops
+html
+css
+flutter
+Kubernetes
+full-stack
+sensor network
+Spring boot
+plsql
+c#
+c programming
+Hibernate
+DBMS
+Soft skills - apt, reasoning etc
+selenium
+java-materials
+big data
+MERN
+Docker
+Agile
+resume creation tips
+python
+Soft
+Deep learning
+DSA

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Downloads</title>
+    <link rel="stylesheet" href="materials.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="bottom-nav">
+        <a href="../home/" class="nav-item active">
+            <img src="../Images/Navbarimages/roofing.png" class="bottom-logos">
+            <span class="bottom-names">Home</span>
+        </a>
+        <a href="../roadmaps/" class="nav-item">
+            <img src="../Images/Navbarimages/Road.png" class="bottom-logos">
+            <span class="bottom-names">Roadmaps</span>
+        </a>
+        <a href="../hiring/" class="nav-item">
+            <img src="../Images/Navbarimages/link.png" class="bottom-logos">
+            <span class="bottom-names">Links</span>
+        </a>
+        <a href="../resume/" class="nav-item">
+            <img src="../Images/Navbarimages/resume.png" class="bottom-logos">
+            <span class="bottom-names">Resume</span>
+        </a>
+        <a href="../materials" class="nav-item">
+            <img src="../Images/Navbarimages/books.png" class="bottom-logos">
+            <span class="bottom-names">Materials</span>
+        </a>
+    </div>
+    
+    <!-- Warning Message -->
+    <div class="subMain" id="warningMessage">
+        <div class="notice">
+            <h2>⚠️ Important Notice! ⚠️</h2>
+            <p>The files available here are **strictly for educational purposes** and belong to their respective owners.</p>
+            <p>💡 <strong>Are you the owner of a file and want it removed?</strong> No worries! Just <span class="contact">contact us</span>, and we’ll **remove it immediately!**</p>
+            <p>📩 <span class="contact">Need to reach us?</span> Use our support form—we’re here to help!</p>
+            <p>🚀 <strong>Stay curious, keep exploring, and enjoy learning!</strong> 🚀</p>
+        </div>
+
+        <p id="countdown">Closing in 5 seconds</p> <!-- Countdown Timer -->
+    </div>
+
+    <!-- File Links Container (Hidden initially with fade-in) -->
+    <div class="fileLinksContainer hidden" id="fileContainer"></div>
+
+    <!-- PapaParse Library for CSV Parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
