@@ -9,6 +9,7 @@ body {
     height: 90vh;
     overflow: hidden;
     font-family: 'Open Sauce One', sans-serif;
+    user-select: none;
 }
 
 @keyframes move {

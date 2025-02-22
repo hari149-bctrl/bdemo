@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Open Sauce One', sans-serif;
+    user-select: none;
 }
 
 :root{
@@ -194,27 +195,22 @@ hr{
     row-gap: 0px;
 }
 /* Footer */
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+footer {
+    background: var(--background-color-deap);
     color: #ffffff;
-    font-size: 20px;
-    line-height: 0px;
-    font-weight: 700;
-    margin-top: 20px;
-} 
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
 
 
 /* for small screens */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     footer{
         font-size: 15px;
         margin-top: 20px;
     }
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 

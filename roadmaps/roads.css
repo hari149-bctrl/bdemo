@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Open Sauce One', sans-serif;
+    user-select: none;
 }
 
 :root{
@@ -89,13 +90,16 @@ body {
         min-width: fit-content;
     }
 }
-
+.linksMainHeadContainer{
+    min-height: 100vh;
+}
 .roadmaplinkscontainer{
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(4, 1fr);
     padding: 10px;
     padding-bottom: 60px;
+    
 }
 .linkContainers{
     text-decoration: none;
@@ -122,4 +126,12 @@ body {
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 60px;
     }
+}
+
+footer {
+    background: var(--background-color-deap);
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
 }

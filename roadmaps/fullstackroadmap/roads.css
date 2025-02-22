@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Open Sauce One', sans-serif;
+    user-select: none;
 }
 
 :root{
@@ -104,20 +105,17 @@ svg {
     .nav-item{
         min-width: fit-content;
     }
+    
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+footer {
+    background: var(--background-color-deap);
     color: #ffffff;
-    font-size: 20px;
-    line-height: 0px;
-    font-weight: 700;
-    margin-top: -10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
 }
+
 .svgcontainer{
     width: 50%;
 }
@@ -143,10 +141,7 @@ svg text{
     .nav-item{
         min-width: fit-content;
     }
-    footer{
-        display: none;
-        
-    }
+    
     hr{
         display: none;
     }
@@ -157,7 +152,7 @@ svg text{
         /* border: 1px solid pink; */
         /* background-color: #bbb; */
         /* padding-left: 13px; */
-        padding-bottom: 30px;
+        /* padding-bottom: 30px; */
         font-family: 'Open Sauce One', sans-serif;
     }
     .svgSystem{
@@ -166,5 +161,8 @@ svg text{
     svg text{
         font-family: 'Open Sauce One', sans-serif !important;
         fill: black;
+    }
+    footer{
+        padding: 1px;
     }
 }

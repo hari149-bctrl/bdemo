@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Open Sauce One', sans-serif !important;
+    user-select: none;
 }
 
 :root{
@@ -26,7 +27,7 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 
@@ -89,6 +90,13 @@ svg{
     font-size: 10px;
     user-select: none;
     font-weight: 600;
+}
+footer {
+    background: var(--background-color-deap);
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
 }
 
 @media (max-width:700px) {

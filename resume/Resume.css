@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sauce One', sans-serif;
+    user-select: none;
 }
 :root{
     --background-color: #203141;
@@ -22,7 +23,7 @@ body {
     padding: 20px;
     background-color: var(--background-color);
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
 }
 
 
@@ -225,24 +226,20 @@ label{
 }
 
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+footer {
+    background: var(--background-color);
     color: #ffffff;
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 700;
-    margin-top: 20px;
-} 
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
 
 
 /* for small screens */
 @media (max-width: 700px) {
     footer{
         font-size: 15px;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 }
