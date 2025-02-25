@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Images/Brainy voyage LOGO_processed.png" type="image/x-icon">
     <title>BRAINY VOYAGE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docx@7.1.0/build/index.min.js"></script>
     <link rel="stylesheet" href="Resume.css">
     <!-- Google tag (gtag.js) -->
@@ -48,6 +49,7 @@
     <div class="Resume-Main-Container">
         
         <p class="Fillheader">˚ ༘♡ ⋆｡˚ Fill The Details ˚ ༘♡ ⋆｡˚</p><br>
+        <p style="text-align: center; color: red;">Hover <span style="color: white; text-decoration: none;">/</span> Press on the emoji's for tips</p><br>
         <form id="resumeForm">
             
             <!-- Header content -->
@@ -139,7 +141,7 @@
     
     
             <!-- Word creation button -->
-            <button type="button" onclick="generateResume()">Download Resume as Word</button>
+            <button type="button" onclick="generateResume()">Download Resume as PDF</button>
         </form>
     
     
