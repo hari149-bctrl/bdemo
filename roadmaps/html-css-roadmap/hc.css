@@ -29,6 +29,48 @@ svg{
     justify-content: center;
     /* padding-bottom: 60px; */
 }
+.svg-container {
+    width: 100%;  /* Set a fixed height */
+    overflow-y: hidden; /* Enable vertical scrolling */
+    overflow-x: auto; /* Disable horizontal scrolling */
+    margin: 20px; 
+    border-top: 2px solid;
+    border-top-color: rgb(0, 225, 255);
+    background-color: var(--background-color-deap);
+}
+svg {
+    display: block; /* Prevent extra spacing */
+}
+#y-edge-0,#y-edge-1,#y-edge-2,#y-edge-3,#y-edge-4,#y-edge-5,#y-edge-6{
+  stroke-width: 3;
+  border-radius: 10px;
+}
+.svg-container {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: var(--text-color) #203141; /* thumb color, track color */
+}
+
+.imagecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0px;
+    margin-top: 20px;
+}
+.logoB{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 900;
+}
+.roadMap-name{
+    color: white;
+    /* font-size: 20px; */
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 3px;
+
+}
 
 
 .bottom-nav {
