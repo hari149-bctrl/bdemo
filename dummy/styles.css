@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Roadmap Container */
+.roadmap {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stages */
+.stage {
+    margin: 30px 0;
+}
+
+.stage h2 {
+    background: #ff7b54;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Cards Container */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    perspective: 1000px; /* Adds 3D depth */
+}
+
+/* Individual Cards - Tilted 3D Style */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    height: 140px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Lying Effect */
+.tilted {
+    transform: rotateX(10deg) rotateY(-10deg);
+}
+
+/* Text Inside Card */
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
